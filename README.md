@@ -6,7 +6,7 @@ BearTheme is a bare theme for Adobe Brackets (Code Mirror) style development. It
 It's working with Jacob Lauritzen's [Themes for Brackets](https://github.com/Jacse/themes-for-brackets).
 
 ###Theme development
-1. Download [Themes for Brackets](https://github.com/Jacse/themes-for-brackets) what makes swaping between themes smooth and easy.
+1. Install [Themes for Brackets](https://github.com/Jacse/themes-for-brackets) via Extension Manager - makes swaping between themes smooth and easy.
 2. Download [BearTheme](https://github.com/trimek/BearTheme/archive/master.zip).
 3. Rename BearTheme.css to you themes's name and start playing with options.
 
