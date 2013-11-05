@@ -18,6 +18,7 @@ Good luck with your themes, have fun. :)
 ####Changelog
 1.1.0  
 - added modals (context menu, code hint) and inline editor (Quick edit)  
+
 1.0.0  
 - intial release  
 
