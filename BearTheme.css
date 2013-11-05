@@ -1,0 +1,78 @@
+/*
+BearTheme is bare theme for styling Adobe Brackets (Code Mirror) editor. Some elements need be overwritien, if you find comment with "may need !important", give it a try.
+Good luck, have fun!
+*/
+
+    /*Sidebar*/
+
+#sidebar{} /*General sidebar style*/
+#sidebar #working-set-header{} /*"Working files" header*/
+#sidebar #open-files-container{} /*Working files style*/
+#sidebar #open-files-container ul li.selected a{} /*Selected working file*/
+#sidebar #open-files-container ul li.selected a span.extension{} /*Selected working file's extension*/
+#sidebar #open-files-container ul li .file-status-icon{} /*Icon next to a file, dot, X etc.*/
+
+
+    /*Project file header*/
+#sidebar #project-files-header{} /*Browser header, path select, search, X etc.*/
+#sidebar #project-files-header #project-dropdown-toggle{} /*Path select toggle*/
+#sidebar #project-files-header #project-dropdown-toggle #project-title{} /*Currently selected project title*/
+#sidebar #project-files-header #project-dropdown-toggle .dropdown-arrow{} /*Select toggle arrow - SVG image*/
+#sidebar #project-files-header #closeAllFolders{} /*Close all icon*/
+#sidebar #project-files-header #search-files-button{} /*Search file icon*/
+
+
+    /*Project files container*/
+#sidebar #project-files-container{} /*Project files - WITHOUT header*/
+#sidebar #project-files-container .jstree-icon{} /*Icon next to files (left side), like close/open arrow for parent element*/
+#sidebar #project-files-container li.jstree-closed{} /*Closed tree element*/
+#sidebar #project-files-container li.jstree-open{} /*Open tree element*/
+#sidebar #project-files-container ul li a{} /*Project container file*/
+#sidebar #project-files-container ul li a.jstree-hovered{} /*Project container file hovered*/
+#sidebar #project-files-container ul li a span.extension{} /*Project container file's extension*/
+
+
+    /*Main area*/
+.CodeMirror{}/*Main coding area, without line count.*/
+.CodeMirror .CodeMirror-vscrollbar{} /*Scrollbar vertical*/
+.CodeMirror .CodeMirror-hscrollbar{} /*Scrollbar horizontal*/
+.CodeMirror .CodeMirror-scroll .CodeMirror-gutters{}/*Left vertical bar with line count*/
+
+
+    /*Syntax elements & action*/
+.CodeMirror .cm-atom{} /*Atribbute value ex. #f00 in color:#f00;*/
+.CodeMirror .cm-number{} /*Numbers*/
+.CodeMirror .cm-variable{} /*Variable name ex. class Variable_name */
+.CodeMirror .cm-variable-2{} /*Variable declaration ex. $variable */
+.CodeMirror .cm-property{} /*Property ex. color in color:#f00;*/
+.CodeMirror .cm-operator{} /*Operators ex. dots (:) between property and atom value */
+.CodeMirror .cm-comment{} /*Comment*/
+.CodeMirror .cm-string{} /*String elements ex. "description" in name="description" - including quotation*/
+.CodeMirror .cm-meta{} /*Meta elements like ex.: <!DOCTYPE html>*/
+.CodeMirror .cm-qualifier{} /*Final qualifier like css class ex.: .cm-qualifier*/
+.CodeMirror .cm-tag{} /*Tags ex. ul or <ul>*/
+.CodeMirror .cm-attribute{} /*Attribute ex. rel, href, name*/
+.CodeMirror .cm-keyword {} /*Element call ex. array, class, public function, if, elseif, !important*/
+.CodeMirror .cm-matchingtag{}
+
+.CodeMirror .CodeMirror-matchingtag{} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
+div.CodeMirror span.CodeMirror-matchingbracket{} /*Matching brackets, open/close*/
+
+.CodeMirror-selected{} /*Selected lines - may need !important*/
+.CodeMirror-activeline-background{} /*Active line - may need !important*/
+div.CodeMirror span.CodeMirror-searching{} /*Search result highlight- may need !important*/
+
+
+    /*Status bar - bottom*/
+#status-bar{}/*Bottom status bar*/
+#status-bar #status-info{}/*Line & column info*/
+#status-bar #status-indicators{}/*Second part of the status bar*/
+#status-bar #status-indicators{} #status-indent{} /*Indent status info*/
+#status-bar #status-indicators{} #status-language{} /*Language info*/
+#status-bar #status-indicators{} #fileSizeInfo{} /*File size*/
+#status-bar #status-indicators{} #filePathInfo{} /*File path*/
+
+
+    /*Right toolbar - live preview, extensions*/
+#main-toolbar{} /*Whole toolbar*/
+#main-toolbar .buttons{} /*Buttons group*/
