@@ -15,7 +15,9 @@ If you find element which you would like to include in the BearTheme, please sub
 
 Good luck with your themes, have fun. :)
 
-####Changelog  
+####Changelog
+1.1.0  
+- added modals (context menu, code hint) and inline editor (Quick edit)  
 1.0.0  
--intial release
+- intial release  
 
