@@ -34,9 +34,13 @@ Good luck, have fun!
 
     /*Main area*/
 .CodeMirror{}/*Main coding area, without line count.*/
+.CodeMirror-lines{}/*Code lines, syntax coloring has higher priority then .CodeMirror-lines*/
 .CodeMirror .CodeMirror-vscrollbar{} /*Scrollbar vertical*/
 .CodeMirror .CodeMirror-hscrollbar{} /*Scrollbar horizontal*/
 .CodeMirror .CodeMirror-scroll .CodeMirror-gutters{}/*Left vertical bar with line count*/
+.CodeMirror-gutter{} /*Left bar with line count - it will affect global line count, BUT line count in inline editor won't be changed.*/
+.CodeMirror-linenumbers{} /*Line count bar only, without "gutter"*/
+.CodeMirror-foldgutter{} /*It's exactly .CodeMirror-gutter{} without .CodeMirror-linenumbers{}.*/
 
 
     /*Syntax elements & action*/
@@ -76,3 +80,37 @@ div.CodeMirror span.CodeMirror-searching{} /*Search result highlight- may need !
     /*Right toolbar - live preview, extensions*/
 #main-toolbar{} /*Whole toolbar*/
 #main-toolbar .buttons{} /*Buttons group*/
+
+
+    /*Modal windows like context-menu or hint container*/
+#context-menu-bar .dropdown-menu{} /*Dropdown menu, available under right-click - may need !important*/
+#context-menu-bar .dropdown-menu a{} /*Single option, treat it like <li> ex. background*/
+
+/*If you need different dropdown style for different sections, use IDs below.*/
+    #context-menu-bar #project-context-menu .dropdown-menu{} /*Dropdown menu for project files section*/
+    #context-menu-bar #editor-context-menu .dropdown-menu{} /*Dropdown menu for editor section*/
+    #context-menu-bar #inline-editor-context-menu .dropdown-menu{} /*Dropdown menu for inline editor like Quick Edit*/
+/*--back to general--*/
+
+#codehint-menu-bar .dropdown-menu{} /*Code hint menu, dropdown visible when writing code.*/
+#codehint-menu-bar .dropdown-menu li a{} /*Code hint menu option, dropdown visible when writing code. Treat like <li>*/
+#codehint-menu-bar .dropdown-menu li a span.code-hint-item{} /*Single hint in dropdown menu, automaticlly puts already typed text into <strong>*/
+
+    /*Inline editor(Ex. Quick Edit - Ctrl + E)*/
+.inline-widget{} /*Inline widget wrap, won't affect line count bar*/
+.inline-text-editor{} /*Whole editing area - without active rule*/
+.inline-text-editor .CodeMirror-lines{}/*Code lines in inline editor, syntax coloring has higher priority then .CodeMirror-lines*/
+.inline-editor-header{} /*Inline text editor header, includes info about inline editor file*/
+.inline-editor-header a.filename{} /*Filename visible in inline editor - may need !important*/
+.inline-editor-header a.filename span.line-number{} /*Line number next to filename - may need !important*/
+.inline-editor-header button.btn{} /*Button responsible for "New rule"*/
+
+/*Global rules apply to inline editor scroll, just use .inline-widget class to target only scroll options of this area. Example below.*/
+.inline-widget .CodeMirror-gutter{} /*Inline editor "gutter", won't affect line count in inline editor*/
+.inline-widget .CodeMirror-linenumbers{} /*Inline editor line numbers bar - no "gutter"*/
+
+.inline-widget .related-container{} /*Related container with similar rules*/
+.inline-widget .related-container .selection {} /*Currently selected style rule*/
+.inline-widget .related-container ul li.selected {} /*Currently selected style rule from related container - text*/
+.inline-widget .related-container .related ul li{} /*List element with rule*/
+.inline-widget .related-container .related ul li .related-file{} /*File information for rule*/
