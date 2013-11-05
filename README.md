@@ -11,7 +11,7 @@ BearTheme is a bare theme for Adobe Brackets (Code Mirror) style development. It
 
 
 ###Contribute
-If you find element which you would like to include in the BearTheme, please submit an issue (preferably with example code if it's syntax related) or a pull request. 
+If you find element which you would like to include in the BearTheme, please submit an issue (preferably with example code if it's syntax related) or a pull request. Also, if you created a new theme, consider adding it to Themes for Brackets.
 
 Good luck with your themes, have fun. :)
 
