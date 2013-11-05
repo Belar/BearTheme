@@ -15,3 +15,7 @@ If you find element which you would like to include in the BearTheme, please sub
 
 Good luck with your themes, have fun. :)
 
+####Changelog
+1.0.0
+-intial release
+
