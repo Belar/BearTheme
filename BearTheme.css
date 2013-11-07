@@ -36,6 +36,12 @@ Good luck, have fun!
 .CodeMirror{}/*Main coding area, without line count.*/
 .CodeMirror-lines{}/*Code lines, syntax coloring has higher priority then .CodeMirror-lines*/
 .CodeMirror .CodeMirror-vscrollbar{} /*Scrollbar vertical*/
+    
+    /*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
+    .CodeMirror .CodeMirror-vscrollbar::-webkit-scrollbar {width: 8px;}
+    .CodeMirror .CodeMirror-vscrollbar::-webkit-scrollbar-track {background: none;}
+    .CodeMirror .CodeMirror-vscrollbar::-webkit-scrollbar-thumb {background: #a5a4a4;}
+
 .CodeMirror .CodeMirror-hscrollbar{} /*Scrollbar horizontal*/
 .CodeMirror .CodeMirror-scroll .CodeMirror-gutters{}/*Left vertical bar with line count*/
 .CodeMirror-gutter{} /*Left bar with line count - it will affect global line count, BUT line count in inline editor won't be changed.*/
@@ -82,7 +88,7 @@ div.CodeMirror span.CodeMirror-searching{} /*Search result highlight- may need !
 #main-toolbar .buttons{} /*Buttons group*/
 
 
-    /*Modal windows like context-menu or hint container*/
+    /*Modal windows like context-menu, quick-view or hint container*/
 #context-menu-bar .dropdown-menu{} /*Dropdown menu, available under right-click - may need !important*/
 #context-menu-bar .dropdown-menu a{} /*Single option, treat it like <li> ex. background*/
 
@@ -105,7 +111,7 @@ div.CodeMirror span.CodeMirror-searching{} /*Search result highlight- may need !
 .inline-editor-header a.filename span.line-number{} /*Line number next to filename - may need !important*/
 .inline-editor-header button.btn{} /*Button responsible for "New rule"*/
 
-/*Global rules apply to inline editor scroll, just use .inline-widget class to target only scroll options of this area. Example below.*/
+/*Global rules apply to inline editor scroll, just use .inline-widget class to target only bar options of this area. Example below.*/
 .inline-widget .CodeMirror-gutter{} /*Inline editor "gutter", won't affect line count in inline editor*/
 .inline-widget .CodeMirror-linenumbers{} /*Inline editor line numbers bar - no "gutter"*/
 
@@ -114,3 +120,25 @@ div.CodeMirror span.CodeMirror-searching{} /*Search result highlight- may need !
 .inline-widget .related-container ul li.selected {} /*Currently selected style rule from related container - text*/
 .inline-widget .related-container .related ul li{} /*List element with rule*/
 .inline-widget .related-container .related ul li .related-file{} /*File information for rule*/
+
+    /*Inline widget - extended color picker*/
+.inline-widget .color-editor{} /*Extended color editor area*/
+
+.inline-widget .color-editor .sliders .color-selection-field{} /*Color selection square - big one*/
+.inline-widget .color-editor .hue-slider{} /*Hue slider*/
+.inline-widget .color-editor .opacity-slider{} /*Opacity slider*/
+
+.inline-widget .color-editor input.color-value{} /*Input for color value*/
+.inline-widget .color-editor ul.button-bar{} /*Buttons for RGBa, HEX, HSLA*/
+.inline-widget .color-editor ul.button-bar li a{} /*Single buttons <li>*/
+.inline-widget .color-editor ul.button-bar li a.rgba{} /*RGBa button*/
+.inline-widget .color-editor ul.button-bar li a.hex{} /*HEX button*/
+.inline-widget .color-editor ul.button-bar li a.hsla{} /*HSLA button*/
+
+.inline-widget .color-editor .large-swatches{} /*Big swatches with currently picked and original color*/
+.inline-widget .color-editor .large-swatches .current-color{} /*Current color swatch*/
+.inline-widget .color-editor .large-swatches .original-color{} /*Original color swatch*/
+
+.inline-widget .color-editor ul.swatches{} /*Small swatches with color suggestions*/
+.inline-widget .color-editor ul.swatches li .swatch-bg{} /*Swatch sample*/
+.inline-widget .color-editor ul.swatches li span.value{} /*Swatch label with color value*/

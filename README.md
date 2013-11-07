@@ -19,6 +19,10 @@ Good luck with your themes, have fun. :)
 
 ####Changelog
 
+1.2.0
+- added extended color picker
+- added scrollbar for editing area
+
 1.1.0  
 - added modals (context menu, code hint) and inline editor (Quick edit)  
 
