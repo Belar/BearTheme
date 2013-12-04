@@ -19,6 +19,9 @@ Good luck with your themes, have fun. :)
 
 ####Changelog
 
+1.3.0
+- problems panel
+
 1.2.0
 - added extended color picker
 - added scrollbar for editing area
