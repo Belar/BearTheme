@@ -51,6 +51,7 @@ Good luck, have fun!
 
     /*Syntax elements & action*/
 .CodeMirror .cm-atom{} /*Atribbute value ex. #f00 in color:#f00;*/
+.CodeMirror .cm-def{} /*variable definition*/
 .CodeMirror .cm-number{} /*Numbers*/
 .CodeMirror .cm-variable{} /*Variable name ex. class Variable_name */
 .CodeMirror .cm-variable-2{} /*Variable declaration ex. $variable */
