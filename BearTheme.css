@@ -6,7 +6,6 @@ Good luck, have fun!
     /*Sidebar*/
 
 #sidebar{} /*General sidebar style*/
-#sidebar:hover{} /*General sidebar style*/
 #sidebar #working-set-header{} /*"Working files" header*/
 #sidebar #open-files-container{} /*Working files style*/
 #sidebar #open-files-container ul li.selected a{} /*Selected working file*/
