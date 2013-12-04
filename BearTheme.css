@@ -83,6 +83,16 @@ div.CodeMirror span.CodeMirror-searching{} /*Search result highlight- may need !
 #status-bar #status-indicators{} #fileSizeInfo{} /*File size*/
 #status-bar #status-indicators{} #filePathInfo{} /*File path*/
 
+    /*Status bar - ex. debug area*/
+#problems-panel{} /*Bottom error panel main wrapper*/
+#problems-panel .toolbar{} /*Error panel toolbar with title and X*/
+#problems-panel .toolbar .title{} /*Error panel toolbar title eg. "JSLint Errors"*/
+#problems-panel .toolbar .close{} /*X to close error panel*/
+#problems-panel .toolbar .table-container{} /*Table container with errors*/
+#problems-panel .table .tbody{} /*Table with errors - additional classes for look: table-striped table-condensed row-highlight, fimilar for people working with Boostrap*/
+#problems-panel .table .tbody tr{} /*Single row containing line number, "error" message and code info*/
+#problems-panel .table .tbody tr td.line-number{} /*Line number for error row*/
+/*There are no separated classes for error and code excerpt, the only hint I can give is: error is second child and excerpt is 3rd chaild of tr.*/
 
     /*Right toolbar - live preview, extensions*/
 #main-toolbar{} /*Whole toolbar*/
@@ -93,11 +103,11 @@ div.CodeMirror span.CodeMirror-searching{} /*Search result highlight- may need !
 #context-menu-bar .dropdown-menu{} /*Dropdown menu, available under right-click - may need !important*/
 #context-menu-bar .dropdown-menu a{} /*Single option, treat it like <li> ex. background*/
 
-/*If you need different dropdown style for different sections, use IDs below.*/
-    #context-menu-bar #project-context-menu .dropdown-menu{} /*Dropdown menu for project files section*/
-    #context-menu-bar #editor-context-menu .dropdown-menu{} /*Dropdown menu for editor section*/
-    #context-menu-bar #inline-editor-context-menu .dropdown-menu{} /*Dropdown menu for inline editor like Quick Edit*/
-/*--back to general--*/
+		/*If you need different dropdown style for different sections, use IDs below.*/
+			#context-menu-bar #project-context-menu .dropdown-menu{} /*Dropdown menu for project files section*/
+			#context-menu-bar #editor-context-menu .dropdown-menu{} /*Dropdown menu for editor section*/
+			#context-menu-bar #inline-editor-context-menu .dropdown-menu{} /*Dropdown menu for inline editor like Quick Edit*/
+		/*--back to general--*/
 
 #codehint-menu-bar .dropdown-menu{} /*Code hint menu, dropdown visible when writing code.*/
 #codehint-menu-bar .dropdown-menu li a{} /*Code hint menu option, dropdown visible when writing code. Treat like <li>*/
