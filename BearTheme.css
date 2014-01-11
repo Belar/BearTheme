@@ -35,14 +35,20 @@ Good luck, have fun!
     /*Main area*/
 .CodeMirror{}/*Main coding area, without line count.*/
 .CodeMirror-lines{}/*Code lines, syntax coloring has higher priority then .CodeMirror-lines*/
-.CodeMirror .CodeMirror-vscrollbar{} /*Scrollbar vertical*/
-    
-    /*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
-    .CodeMirror .CodeMirror-vscrollbar::-webkit-scrollbar {width: 8px;}
-    .CodeMirror .CodeMirror-vscrollbar::-webkit-scrollbar-track {background: none;}
-    .CodeMirror .CodeMirror-vscrollbar::-webkit-scrollbar-thumb {background: #a5a4a4;}
 
-.CodeMirror .CodeMirror-hscrollbar{} /*Scrollbar horizontal*/
+/*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
+.CodeMirror .CodeMirror-vscrollbar{ width: 8px; bottom:8px !important;} /*Scrollbar vertical. These values MUST be the same as height/width of scrollbars*/
+.CodeMirror .CodeMirror-hscrollbar{ height:8px; right:8px !important;} /*Scrollbar horizontal. These values MUST be the same as height/width of scrollbars*/
+.CodeMirror ::-webkit-scrollbar { width: 8px; height:8px;} /* The width of vertical scrollbars and height of horizontal scrollbars*/
+.CodeMirror-scrollbar-filler {height:8px !important; width:8px !important; background:none;} /* Corner where scrollbars meet. Width and height MUST be the same as that of scrollbars. Background should be the same as that of the scrollbar track*/
+.CodeMirror-gutter-filler{ height:8px !important;} /* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
+
+
+.CodeMirror ::-webkit-scrollbar-track {background: none;} /* The track that scrollbars run in */
+
+.CodeMirror ::-webkit-scrollbar-thumb {background: #a5a4a4; border-radius: 4px} /* The scrollbar thumb */
+
+
 .CodeMirror .CodeMirror-scroll .CodeMirror-gutters{}/*Left vertical bar with line count*/
 .CodeMirror-gutter{} /*Left bar with line count - it will affect global line count, BUT line count in inline editor won't be changed.*/
 .CodeMirror-linenumbers{} /*Line count bar only, without "gutter"*/
