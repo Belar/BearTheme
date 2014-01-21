@@ -36,17 +36,20 @@ Good luck, have fun!
 .CodeMirror{}/*Main coding area, without line count.*/
 .CodeMirror-lines{}/*Code lines, syntax coloring has higher priority then .CodeMirror-lines*/
 
-/*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
+.CodeMirror div.CodeMirror-cursor { border-left: 1px solid white; z-index: 3;} /*Cursor stling*/
+.CodeMirror div.CodeMirror-secondarycursor {} /* Shown when moving in bi-directional text  - from CM docs*/
+
+	/*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
 .CodeMirror .CodeMirror-vscrollbar{ width: 8px; bottom:8px !important;} /*Scrollbar vertical. These values MUST be the same as height/width of scrollbars*/
 .CodeMirror .CodeMirror-hscrollbar{ height:8px; right:8px !important;} /*Scrollbar horizontal. These values MUST be the same as height/width of scrollbars*/
+
 .CodeMirror ::-webkit-scrollbar { width: 8px; height:8px;} /* The width of vertical scrollbars and height of horizontal scrollbars*/
+.CodeMirror ::-webkit-scrollbar-track {background: none;} /* The track that scrollbars run in */
+.CodeMirror ::-webkit-scrollbar-thumb {background: #a5a4a4; border-radius: 4px} /* The scrollbar thumb */
+
 .CodeMirror-scrollbar-filler {height:8px !important; width:8px !important; background:none;} /* Corner where scrollbars meet. Width and height MUST be the same as that of scrollbars. Background should be the same as that of the scrollbar track*/
 .CodeMirror-gutter-filler{ height:8px !important;} /* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
 
-
-.CodeMirror ::-webkit-scrollbar-track {background: none;} /* The track that scrollbars run in */
-
-.CodeMirror ::-webkit-scrollbar-thumb {background: #a5a4a4; border-radius: 4px} /* The scrollbar thumb */
 
 
 .CodeMirror .CodeMirror-scroll .CodeMirror-gutters{}/*Left vertical bar with line count*/
@@ -77,6 +80,7 @@ div.CodeMirror span.CodeMirror-matchingbracket{} /*Matching brackets, open/close
 
 .CodeMirror-selected{} /*Selected lines - may need !important*/
 .CodeMirror-activeline-background{} /*Active line - may need !important*/
+.CodeMirror-gutter-elt{} /*Active line, line count section*/
 div.CodeMirror span.CodeMirror-searching{} /*Search result highlight- may need !important*/
 
 
@@ -108,6 +112,7 @@ div.CodeMirror span.CodeMirror-searching{} /*Search result highlight- may need !
     /*Modal windows like context-menu, quick-view or hint container*/
 #context-menu-bar .dropdown-menu{} /*Dropdown menu, available under right-click - may need !important*/
 #context-menu-bar .dropdown-menu a{} /*Single option, treat it like <li> ex. background*/
+#context-menu-bar .dropdown-menu a:hover{} /*Single option, treat it like <li> ex. background - hover state. RGBA is not working!*/
 
 		/*If you need different dropdown style for different sections, use IDs below.*/
 			#context-menu-bar #project-context-menu .dropdown-menu{} /*Dropdown menu for project files section*/
