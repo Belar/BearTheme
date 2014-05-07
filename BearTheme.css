@@ -73,10 +73,10 @@ Good luck, have fun!
 .CodeMirror .cm-tag{} /*Tags ex. ul or <ul>*/
 .CodeMirror .cm-attribute{} /*Attribute ex. rel, href, name*/
 .CodeMirror .cm-keyword {} /*Element call ex. array, class, public function, if, elseif, !important*/
-.CodeMirror .cm-matchingtag{}
+.CodeMirror .cm-matchingtag{} 
 
-.CodeMirror .CodeMirror-matchingtag{} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
-div.CodeMirror span.CodeMirror-matchingbracket{} /*Matching brackets, open/close*/
+.CodeMirror .CodeMirror-matchingtag{} /*Matching tags, open/close. Try !important for color etc. if it doesn't work. DON'T use background property, it may break your cursor visibility.*/
+div.CodeMirror span.CodeMirror-matchingbracket{} /*Matching brackets, open/close. DON'T use background property, it may break your cursor visibility.*/
 
 .CodeMirror-selected{} /*Selected lines - may need !important*/
 .CodeMirror-activeline-background{} /*Active line - may need !important*/
