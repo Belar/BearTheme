@@ -39,7 +39,7 @@ Good luck, have fun!
 .CodeMirror div.CodeMirror-cursor { border-left: 1px solid white; z-index: 3;} /*Cursor stling*/
 .CodeMirror div.CodeMirror-secondarycursor {} /* Shown when moving in bi-directional text  - from CM docs*/
 
-	/*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
+    /*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
 .CodeMirror .CodeMirror-vscrollbar{ width: 8px; bottom:8px !important;} /*Scrollbar vertical. These values MUST be the same as height/width of scrollbars*/
 .CodeMirror .CodeMirror-hscrollbar{ height:8px; right:8px !important;} /*Scrollbar horizontal. These values MUST be the same as height/width of scrollbars*/
 
@@ -73,7 +73,7 @@ Good luck, have fun!
 .CodeMirror .cm-tag{} /*Tags ex. ul or <ul>*/
 .CodeMirror .cm-attribute{} /*Attribute ex. rel, href, name*/
 .CodeMirror .cm-keyword {} /*Element call ex. array, class, public function, if, elseif, !important*/
-.CodeMirror .cm-matchingtag{} 
+.CodeMirror .cm-matchingtag{}
 
 .CodeMirror .CodeMirror-matchingtag{} /*Matching tags, open/close. Try !important for color etc. if it doesn't work. DON'T use background property, it may break your cursor visibility.*/
 div.CodeMirror span.CodeMirror-matchingbracket{} /*Matching brackets, open/close. DON'T use background property, it may break your cursor visibility.*/
@@ -114,11 +114,11 @@ div.CodeMirror span.CodeMirror-searching{} /*Search result highlight- may need !
 #context-menu-bar .dropdown-menu a{} /*Single option, treat it like <li> ex. background*/
 #context-menu-bar .dropdown-menu a:hover{} /*Single option, treat it like <li> ex. background - hover state. RGBA is not working!*/
 
-		/*If you need different dropdown style for different sections, use IDs below.*/
-			#context-menu-bar #project-context-menu .dropdown-menu{} /*Dropdown menu for project files section*/
-			#context-menu-bar #editor-context-menu .dropdown-menu{} /*Dropdown menu for editor section*/
-			#context-menu-bar #inline-editor-context-menu .dropdown-menu{} /*Dropdown menu for inline editor like Quick Edit*/
-		/*--back to general--*/
+        /*If you need different dropdown style for different sections, use IDs below.*/
+            #context-menu-bar #project-context-menu .dropdown-menu{} /*Dropdown menu for project files section*/
+            #context-menu-bar #editor-context-menu .dropdown-menu{} /*Dropdown menu for editor section*/
+            #context-menu-bar #inline-editor-context-menu .dropdown-menu{} /*Dropdown menu for inline editor like Quick Edit*/
+        /*--back to general--*/
 
 #codehint-menu-bar .dropdown-menu{} /*Code hint menu, dropdown visible when writing code.*/
 #codehint-menu-bar .dropdown-menu li a{} /*Code hint menu option, dropdown visible when writing code. Treat like <li>*/
