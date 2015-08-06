@@ -3,7 +3,7 @@ BearTheme
 
 BearTheme is a bare theme for Adobe Brackets (Code Mirror) style development. It contains clean CSS for primary UI elements, basic syntax and actions, so you don't have to fetch it by yourself via debug tools anymore. Every line contains comment which explains (hopefuly) to which element or action it refers and small tips if needs something extra to work (ex. !improtant).
 
-![Bear Theme](http://i.imgur.com/OoPCTkb.png)
+![Bear Theme](bt_preview.png)
 
 ###Theme development
 1. Install [Themes for Brackets](https://github.com/Jacse/themes-for-brackets) via Extension Manager - makes swaping between themes smooth and easy.
